@@ -12,6 +12,7 @@
 		A1000003 /* WindowObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* WindowObserver.swift */; };
 		A1000004 /* AccessibilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004 /* AccessibilityHelper.swift */; };
 		A1000005 /* LoginItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000005 /* LoginItemManager.swift */; };
+		A1000010 /* WindowHider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000010 /* WindowHider.swift */; };
 		A1000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000006 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +22,7 @@
 		A2000003 /* WindowObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowObserver.swift; sourceTree = "<group>"; };
 		A2000004 /* AccessibilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelper.swift; sourceTree = "<group>"; };
 		A2000005 /* LoginItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManager.swift; sourceTree = "<group>"; };
+		A2000010 /* WindowHider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHider.swift; sourceTree = "<group>"; };
 		A2000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2000008 /* MinimizeToHide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinimizeToHide.entitlements; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				A2000001 /* main.swift */,
 				A2000002 /* AppDelegate.swift */,
 				A2000003 /* WindowObserver.swift */,
+				A2000010 /* WindowHider.swift */,
 				A2000004 /* AccessibilityHelper.swift */,
 				A2000005 /* LoginItemManager.swift */,
 				A2000006 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				A1000001 /* main.swift in Sources */,
 				A1000002 /* AppDelegate.swift in Sources */,
 				A1000003 /* WindowObserver.swift in Sources */,
+				A1000010 /* WindowHider.swift in Sources */,
 				A1000004 /* AccessibilityHelper.swift in Sources */,
 				A1000005 /* LoginItemManager.swift in Sources */,
 			);

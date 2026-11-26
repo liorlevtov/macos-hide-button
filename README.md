@@ -4,7 +4,12 @@ A macOS menu bar utility that intercepts the minimize button and hides the appli
 
 ## What it does
 
-When you click the yellow minimize button on any window, instead of minimizing to the Dock, the application hides completely (like pressing ⌘H). When you quit MinimizeToHide, normal minimize behavior is restored.
+When you click the yellow minimize button, the window hides instead of minimizing to the Dock, and ⌘Tab brings it back, like minimize and Alt+Tab on Windows.
+
+- **App's last open window** → the whole app hides (like pressing ⌘H).
+- **App has other windows open** (for example several Chrome windows) → only the window you clicked hides; the others stay on screen.
+
+A hidden window comes back when you switch to its app with ⌘Tab, the Dock or Spotlight, or pick it from the app's Window menu. Clicking one of the app's other windows doesn't bring it back. Disabling or quitting MinimizeToHide puts every hidden window back and restores normal minimize behavior.
 
 ## Features
 
@@ -73,7 +78,8 @@ Uses macOS Accessibility APIs with a `CGEventTap` to:
 
 1. Intercept all left mouse clicks before they reach windows
 2. Check if the click is on a minimize button (`AXMinimizeButton`)
-3. If so, consume the click and hide the application instead
+3. If it's the app's last visible window, consume the click and hide the application
+4. Otherwise, consume the click and hide just that window by moving it off-screen (macOS can only hide whole apps); it's moved back when you switch to the app or focus the window
 
 ## License
 
